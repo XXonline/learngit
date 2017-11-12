@@ -1,0 +1,27 @@
+## Git常用命令
+- `git init test_repo_name`-------->初始化git仓库
+- `git init —bare test_git_bare_repo`-------->用“git init –bare”初始化的版本库（bare repository）仅包含”.git”目录(记录版本历史),不包含其它
+- `git clone ‘仓库地址’`-------->克隆git仓库
+- `git add file1 file2`-------->提交file1、file2这两个文件到暂存区- (可单个或多个提交)
+- `git commit -m “待提交文件的注释”` -------->提交暂存区的文件到工作区
+- `git status` -------->查看当前暂存区的状态
+- `git rm file1` -------->同时删除工作区和暂存区里的文件
+- `git mv file1 file2`--------> 将file1文件的名字重命名为file2
+- `git .gitignore`-------->用于记录忽略规则
+- `git pull`-------->拉取code
+- `git push`————>推送code
+- `git branch`-------->不带参数：列出本地已经存在的分支，并且在当前- 分支的前面加“*”号标记
+- `git branch branchname`-------->创建一个新的本地分支，需要注意，此处只是创建分支，不进行分支切换
+- `git branch -r`-------->列出远程分支
+- `git branch -a`-------->列出本地分支和远程分支
+- `git branch -m | -M oldbranch newbranch`-------->重命名分支，如果newbranch名字分支已经存在，则需要使用-M强制重命名，否则，使用-m进行重命名
+- `git branch -d | -D branchname`-------->删除branchname分支
+- `git branch -d -r branchname`-------->删除远程branchname分支
+- `git checkout test_name`-------->创建／切换分支／还原工作区
+- `git reset`-------->还原暂存区 
+- `git clean`-------->对于没有被添加进暂存区的文件(git还没有跟踪的文件)，使用此命令可以清除它们
+- `git revert`-------->产生一个新的提交来覆盖我们之前的一些提交所带来的修改
+- `git remote add origin git@server-name:path/repo-name.git`-------->关联一个远程仓库
+- `git show`-------->查看相应标签的版本信息，并连同显示打标签时的提交对象
+- `git diff`-------->顾名思义就是查看difference
+- `git tag`-------->列出现有的标签
